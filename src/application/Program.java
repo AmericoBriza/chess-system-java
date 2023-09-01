@@ -2,12 +2,14 @@ package application;
 
 import boardgame.Board;
 import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
 
 	public static void main(String[] args) {
 
-		Board tab = new Board(8, 8);
+		ChessMatch partida = new ChessMatch();
+		UI.printBoard(partida.getPieces());
 
 	}
 
